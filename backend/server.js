@@ -4,6 +4,7 @@ if(process.env.Node_ENV != "production") {
     dotenv.config()
 }
 
+
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
