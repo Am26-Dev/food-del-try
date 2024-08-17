@@ -31,19 +31,19 @@ const createToken = (id) => {
     return jwt.sign({id},process.env.JWT_SECRET)
 }
 
-//registered user
+//register user
 export const regUser = async (req, res) => {
     const {name, password, email } = req.body;
     try{
 
-        //checking is user already exists
+        //checking if user already exists
 
         const exists = await userModel.findOne({email});
         if(exists){
             return res.json({success:false, message:"User already exists"})
         }
 
-        //validating ea=mail format and strong password
+        //validating email format and strong password
         if(!validator.isEmail(email)) {
             return res.json({success:false, message:"Please enter a valid email"})
         }
