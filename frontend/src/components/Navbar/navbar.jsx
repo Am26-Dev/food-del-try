@@ -3,7 +3,8 @@ import "./navbar.css";
 import { assets } from "../../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
-
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Navbar = ({setShowLogin})=> {
 
@@ -37,10 +38,10 @@ const Navbar = ({setShowLogin})=> {
 
 {/* navbar right section */}
             <div className="navbar-right">
-                <img src={assets.search} alt="" className="search-icon"/>
+                <SearchIcon />
                 <div className="navbar-search-icon">
                     <Link to="/cart">
-                        <img src={assets.basket} alt="" className="basket-icon"/>
+                        <ShoppingCartIcon />
                     </Link>
 
                     {/* {getTotalCartAmount()? <div className="dot"></div> : <></>} */}
