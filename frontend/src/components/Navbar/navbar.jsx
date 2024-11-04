@@ -38,10 +38,10 @@ const Navbar = ({setShowLogin})=> {
 
 {/* navbar right section */}
             <div className="navbar-right">
-                <SearchIcon />
+                <SearchIcon style={{cursor: "pointer"}} />
                 <div className="navbar-search-icon">
                     <Link to="/cart">
-                        <ShoppingCartIcon />
+                        <ShoppingCartIcon style={{cursor: "pointer"}} />
                     </Link>
 
                     {/* {getTotalCartAmount()? <div className="dot"></div> : <></>} */}
