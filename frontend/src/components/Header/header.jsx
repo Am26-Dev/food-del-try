@@ -1,13 +1,16 @@
 import "./header.css";
 
 export const Header = () => {
-    return(
+    return (
         <div className="header">
             <div className="header-content">
-                <h2>Order your favourite food here!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatem laboriosam repellat debitis rem id, vitae deserunt veritatis ratione animi suscipit dolore sit neque exercitationem, optio assumenda ut odio in.</p>
-                <button>View menu</button>
+                <h1>Your Cravings, Delivered!</h1>
+                <p>Discover the best dishes from your favorite restaurants and order with ease.</p>
+                <div className="button-group">
+                    <button className="primary-button">Order Now</button>
+                    <button className="secondary-button">View Menu</button>
+                </div>
             </div>
         </div>
-    )
-}
+    );
+};
